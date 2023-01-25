@@ -2,6 +2,12 @@
 #include <SD.h>
 #include <RTClib.h>
 
+// PIE Heliosphere
+//
+// Programme arduino Nano EL_RC_01
+// 
+// Auteur : neyreta
+
 const int chipSelect = 4; // Pin de sélection de la carte SD
 const int wattmeterAddress = 0x40; // Adresse I2C du module Wattmètre
 const int registerPower = 0x00; // Registre de lecture de la puissance
