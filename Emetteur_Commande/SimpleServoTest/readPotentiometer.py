@@ -4,5 +4,5 @@ import time
 ADC.setup()
 while True:
     value = ADC.read("P9_33") * 1.8
-    print round(value, 2)
+    print(round(value, 2))
     time.sleep(.5)
