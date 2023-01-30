@@ -1,15 +1,19 @@
 // Include the servo library:
 #include <Servo.h>
+
 // Create a new servo object:
 Servo myservo;
 Servo myservo2;
 
 
-// Define the servo pin:
+// Define the servo pin: -> Ces ports sont ceux sur lesquels faire les branchements des pots
+// et servos
+
 #define servoPin 9
 #define servoPin2 6
 #define potPin A0
 #define potPin2 A1
+
 // Create a variable to store the servo position:
 float angle = 0;
 float angle2 = 0;
