@@ -1,11 +1,19 @@
 import pigpio
 
+import time
+
 import lib_motion
 
 pi = pigpio.pi()
 
 tower = lib_motion.control(pi = pi)
 
+tower.set_speed(0.2)
+time.sleep(5)
+tower.set_speed(0.5)
+time.sleep(5)
+tower.set_speed(0)
+time.sleep(10)
 a = 0
 while a < 4:
     tower.move_para(45)
